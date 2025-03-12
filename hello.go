@@ -53,4 +53,27 @@ func main() {
 
 	fmt.Println(hewan)
 
+	var hewan2 = [...]string{
+		"kambing",
+		"kelinci",
+		"kelinci1",
+		"kelinci2",
+	}
+	fmt.Println(hewan2[:])
+
+	// make a slice
+	fmt.Println("=================")
+	var cobamake []string = make([]string,2,5)
+	cobamake[0] = "kambing"
+	cobamake[1] = "kelinci"
+	cobamake2 := append(cobamake,"kelinci")
+	fmt.Println(cobamake)
+	fmt.Println(cobamake2)
+
+	// make a map
+	fmt.Println("=================")
+	book := make(map[string]string)
+	book["satu"] = "satu"
+
+	fmt.Println(book)
 }
